@@ -1,0 +1,79 @@
+No. of hidden nodes =0.8
+Cutoff_day=0, end_day=10, hidden_nodes=0.8
+Test_set:0, Test Accuracy: 0.7295,
+ confusion_matrix:[[6045214 1710380 1211557]
+ [  46630  514897   80270]
+ [  56428 1223916 5114708]]
+Accuracy_infected = 0.8022739277372751
+Precision_infected = 0.14928042588512733
+F1_score_infected = 0.2517224437116688
+Balanced accuracy = 0.7587388040924241
+Conf_matrix_percentage:
+[[0.67415102 0.1907384  0.13511058]
+ [0.07265537 0.80227393 0.1250707 ]
+ [0.0088237  0.19138484 0.79979146]]
+Mean values:
+Total accuracy = 0.7294938140464884
+Accuracy_susceptible = 0.6741510207645661
+Accuracy_infected = 0.8022739277372751
+Accuracy_recovered = 0.7997914637754314
+Precision_susceptible = 0.9832378918824671
+Precision_infected = 0.14928042588512733
+Precision_recovered = 0.7983579267107727
+F1_infected = 0.2517224437116688
+Balanced accuracy = 0.7587388040924241
+
+#####################################################################
+
+No. of hidden nodes =0.9
+Cutoff_day=0, end_day=10, hidden_nodes=0.9
+Test_set:0, Test Accuracy: 0.7264,
+ confusion_matrix:[[6772605 1933941 1359052]
+ [  61370  566219   94765]
+ [  66867 1409511 5739670]]
+Accuracy_infected = 0.7838525155256287
+Precision_infected = 0.14482522953977459
+F1_score_infected = 0.24448011398902209
+Balanced accuracy = 0.7507009327217445
+Conf_matrix_percentage:
+[[0.67284676 0.19213374 0.1350195 ]
+ [0.08495834 0.78385252 0.13118914]
+ [0.00926643 0.19533005 0.79540352]]
+Mean values:
+Total accuracy = 0.7264215729837814
+Accuracy_susceptible = 0.6728467598249006
+Accuracy_infected = 0.7838525155256287
+Accuracy_recovered = 0.7954035228147042
+Precision_susceptible = 0.9814171951770523
+Precision_infected = 0.14482522953977459
+Precision_recovered = 0.7978981542609308
+F1_infected = 0.24448011398902209
+Balanced accuracy = 0.7507009327217445
+
+#####################################################################
+
+No. of hidden nodes =0.95
+Cutoff_day=0, end_day=10, hidden_nodes=0.95
+Test_set:0, Test Accuracy: 0.7238,
+ confusion_matrix:[[7171413 2009790 1436521]
+ [  78763  577504  106515]
+ [  82137 1534727 6006630]]
+Accuracy_infected = 0.7571022913492977
+Precision_infected = 0.14010214892160908
+F1_score_infected = 0.23644924882334045
+Balanced accuracy = 0.7401439029377954
+Conf_matrix_percentage:
+[[0.67541904 0.18928633 0.13529463]
+ [0.10325755 0.75710229 0.13964016]
+ [0.01077419 0.20131543 0.78791037]]
+Mean values:
+Total accuracy = 0.7238237739423279
+Accuracy_susceptible = 0.675419044608807
+Accuracy_infected = 0.7571022913492977
+Accuracy_recovered = 0.7879103728552813
+Precision_susceptible = 0.9780560377059735
+Precision_infected = 0.14010214892160908
+Precision_recovered = 0.7956153292079411
+F1_infected = 0.23644924882334045
+Balanced accuracy = 0.7401439029377954
+#####################################################################

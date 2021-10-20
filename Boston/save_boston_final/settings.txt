@@ -1,0 +1,4 @@
+dropot-0.4,hidden_units-64,layers-3,k-15
++-100 days from peak infection
+S,E+I,R+D
+No.of days-300

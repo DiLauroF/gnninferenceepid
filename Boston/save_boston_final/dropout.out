@@ -1,0 +1,176 @@
+Validaion: dropout, GNN on data from boston on 300 days, 10k nodes
+Train graphs:20,Test graphs:5,hidden_nodes:0.8, k_days:5, dropout = 0.4
+weight of exposed class:1.0
+weight of recovered class:1.0
+weight of infected class:1.0
+location of graphs:./graphs_boston, dropout= 0.4
+No.of_days_used:300, No.of nodes=10003
+GCN_l(
+  (conv): Sequential(
+    (0): BasicBlock(
+      (conv): GCNConv(3, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.4, inplace=False)
+    )
+    (1): BasicBlock(
+      (conv): GCNConv(32, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.4, inplace=False)
+    )
+    (2): BasicBlock(
+      (conv): GCNConv(32, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.4, inplace=False)
+    )
+  )
+  (out): Linear(in_features=32, out_features=3, bias=True)
+)
+tensor([ 1.0000, 20.5249,  1.6392], device='cuda:0')
+[26m 12s], Epoch: 050, Loss: 0.7460,tot_acc=0.7784882112805132, F1_inf:0.8195141304360237
+[50m 30s], Epoch: 100, Loss: 0.7421,tot_acc=0.7720655461134717, F1_inf:0.8149173405964022
+[75m 21s], Epoch: 150, Loss: 0.7412,tot_acc=0.7714913354994585, F1_inf:0.8144578334873017
+Test_set:0, Test Accuracy: 0.7723,
+ confusion_matrix:[[5403121 1085021  819708]
+ [  21759  288713   38465]
+ [  20677  747047 3578489]]
+Accuracy_infected = 0.8274072397022958
+Precision_infected = 0.13613522565507707
+F1_score_infected = 0.2338024017316957
+Balanced accuracy = 0.7967078939288579
+Conf_matrix_percentage:
+[[0.7393585  0.14847335 0.11216815]
+ [0.06235796 0.82740724 0.1102348 ]
+ [0.00475748 0.17188458 0.82335794]]
+Test_set:1, Test Accuracy: 0.7611,
+ confusion_matrix:[[4760042 1042927  951331]
+ [  30435  283149   41376]
+ [  30031  771083 4092626]]
+Accuracy_infected = 0.7976926977687627
+Precision_infected = 0.13501551384515909
+F1_score_infected = 0.23094229929297883
+Balanced accuracy = 0.7795777892255639
+Conf_matrix_percentage:
+[[0.70474246 0.15440934 0.1408482 ]
+ [0.08574206 0.7976927  0.11656525]
+ [0.00613662 0.15756518 0.83629821]]
+Test_set:2, Test Accuracy: 0.7495,
+ confusion_matrix:[[4351202 1086897 1015615]
+ [  29806  284302   40552]
+ [  28362  805760 4360504]]
+Accuracy_infected = 0.8016184514746518
+Precision_infected = 0.1305959368090993
+F1_score_infected = 0.2246009371868358
+Balanced accuracy = 0.771753721769561
+Conf_matrix_percentage:
+[[0.67421674 0.16841419 0.15736907]
+ [0.08404105 0.80161845 0.1143405 ]
+ [0.00545987 0.15511415 0.83942598]]
+Mean values:
+Total accuracy = 0.7609805326446167
+Accuracy_susceptible = 0.706105898749013
+Accuracy_infected = 0.8089061296485701
+Accuracy_recovered = 0.8330273765263998
+Precision_susceptible = 0.9888239421939838
+Precision_infected = 0.13391555876977848
+Precision_recovered = 0.8054593402453568
+F1_infected = 0.22978187940383676
+Balanced accuracy = 0.7826798016413276
+Std values:
+Total accuracy = 0.009330634420104952
+Accuracy_susceptible = 0.026611481911306033
+Accuracy_infected = 0.013180065514629217
+Accuracy_recovered = 0.0069555337360968925
+Precision_susceptible = 0.002406943171422495
+Precision_infected = 0.0023914230220637893
+Precision_recovered = 0.0007923903148462672
+F1_infected = 0.0038450546751132844
+balanced_accuracy = 0.010420957659435489
+#####################################################################
+Validaion: dropout, GNN on data from boston on 300 days, 10k nodes
+Train graphs:20,Test graphs:5,hidden_nodes:0.8, k_days:5, dropout = 0.5
+weight of exposed class:1.0
+weight of recovered class:1.0
+weight of infected class:1.0
+location of graphs:./graphs_boston, dropout= 0.5
+No.of_days_used:300, No.of nodes=10003
+GCN_l(
+  (conv): Sequential(
+    (0): BasicBlock(
+      (conv): GCNConv(3, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+    (1): BasicBlock(
+      (conv): GCNConv(32, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+    (2): BasicBlock(
+      (conv): GCNConv(32, 32)
+      (relu): ReLU()
+      (dropout): Dropout(p=0.5, inplace=False)
+    )
+  )
+  (out): Linear(in_features=32, out_features=3, bias=True)
+)
+tensor([ 1.0000, 20.5249,  1.6392], device='cuda:0')
+[25m 28s], Epoch: 050, Loss: 0.7479,tot_acc=0.7779060234941265, F1_inf:0.8178057374829976
+[51m 9s], Epoch: 100, Loss: 0.7438,tot_acc=0.7708646380071649, F1_inf:0.8130103668402804
+[76m 53s], Epoch: 150, Loss: 0.7425,tot_acc=0.7712377322336083, F1_inf:0.8143451367996533
+Test_set:0, Test Accuracy: 0.7731,
+ confusion_matrix:[[5399190 1070940  819062]
+ [  22338  289410   37583]
+ [  21685  751916 3590876]]
+Accuracy_infected = 0.828469274126831
+Precision_infected = 0.13701399350271226
+F1_score_infected = 0.2351400330760884
+Balanced accuracy = 0.7973105285693087
+Conf_matrix_percentage:
+[[0.74071173 0.14692163 0.11236664]
+ [0.06394508 0.82846927 0.10758564]
+ [0.00496852 0.17228089 0.82275058]]
+Test_set:1, Test Accuracy: 0.7600,
+ confusion_matrix:[[4748022 1056450  947661]
+ [  29449  282413   41183]
+ [  28436  777408 4091978]]
+Accuracy_infected = 0.7999348524975569
+Precision_infected = 0.1334484099626182
+F1_score_infected = 0.2287378367126767
+Balanced accuracy = 0.7795307400120511
+Conf_matrix_percentage:
+[[0.70318846 0.15646167 0.14034987]
+ [0.0834143  0.79993485 0.11665085]
+ [0.00580585 0.15872525 0.83546891]]
+Test_set:2, Test Accuracy: 0.7513,
+ confusion_matrix:[[4352699 1082918 1012873]
+ [  28858  285892   42087]
+ [  27234  791347 4379092]]
+Accuracy_infected = 0.8011837337495832
+Precision_infected = 0.13234778768395075
+F1_score_infected = 0.22716939333188718
+Balanced accuracy = 0.7728963034364039
+Conf_matrix_percentage:
+[[0.67499508 0.16793358 0.15707135]
+ [0.08087166 0.80118373 0.11794461]
+ [0.00523965 0.15225025 0.8425101 ]]
+Mean values:
+Total accuracy = 0.7614644116748591
+Accuracy_susceptible = 0.7062984210666392
+Accuracy_infected = 0.8098626201246572
+Accuracy_recovered = 0.8335765308264677
+Precision_susceptible = 0.9890483328549221
+Precision_infected = 0.13427006371642705
+Precision_recovered = 0.8062088762174974
+F1_infected = 0.23034908770688411
+Balanced accuracy = 0.7832458573392546
+Std values:
+Total accuracy = 0.008963259492976959
+Accuracy_susceptible = 0.026918685750134463
+Accuracy_infected = 0.013166766395307
+Accuracy_recovered = 0.00817701824810019
+Precision_susceptible = 0.002043979968324498
+Precision_infected = 0.0019915999186788
+Precision_recovered = 0.0008570109893260288
+F1_infected = 0.0034476921563765727
+balanced_accuracy = 0.010307446168545849
+#####################################################################
